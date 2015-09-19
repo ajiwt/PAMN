@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main()
+{
+	int i,j,a[100][100];
+	int k=0, m=0;
+	int matriz[100][100];
+	int matriz2[100][100];
+	int ren, col;
+	
+	printf("Ingrese el numero de renglones: ");
+	scanf("%d", &ren);
+	printf("Ingrese el numero de columnas: ");
+	scanf("%d", &col);
+	
+	for(i=0;i<ren;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			printf("Ingrese  el elemento [%d][%d]: ", i+1,j+1);
+			scanf("%d", &matriz[i][j]);
+			
+		}
+	}
+	puts("");
+	
+	for(i=0;i<ren;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			printf("%d ", matriz[i][j]);
+			
+		}
+		puts("");
+	}
+	
+		for(i=0;i<ren;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			a[i][j] = matriz[i][j];
+		//	printf("a : %d ", a[i][j]);
+		   matriz2[k][m] = a[i][j];
+			k++;
+		}
+		m++;
+		k=0;
+		
+	}
+	puts("");
+		for(i=0;i<ren;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			
+			printf("%d ", matriz2[i][j]);
+		}
+		puts("");
+	}
+}
