@@ -8,10 +8,13 @@ int main()
 	int matriz2[100][100];
 	int ren, col;
 	
+	puts("Programa que pide una matriz de N*M y obtiene la matriz transpuesta\n");
 	printf("Ingrese el numero de renglones: ");
 	scanf("%d", &ren);
 	printf("Ingrese el numero de columnas: ");
 	scanf("%d", &col);
+	puts("\n\n");
+	system("cls");
 	
 	for(i=0;i<ren;i++)
 	{
@@ -22,8 +25,9 @@ int main()
 			
 		}
 	}
-	puts("");
 	
+	puts("");
+	puts("Matriz original: \n");
 	for(i=0;i<ren;i++)
 	{
 		for(j=0;j<col;j++)
@@ -33,6 +37,7 @@ int main()
 		}
 		puts("");
 	}
+	
 	
 		for(i=0;i<ren;i++)
 	{
@@ -48,6 +53,8 @@ int main()
 		
 	}
 	puts("");
+	
+	puts("Matriz transpuesta obtenida: \n");
 		for(i=0;i<ren;i++)
 	{
 		for(j=0;j<col;j++)
