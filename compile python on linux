@@ -1,0 +1,26 @@
+
+Code:
+
+$ python helloworld.py
+Hello World
+$
+
+or like this:
+
+Code:
+
+$ python
+Python 2.6.5 (r265:79063, Apr 16 2010, 13:09:56) 
+[GCC 4.4.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import helloworld
+Hello World
+
+And if you have made the script executable, using chmod +x, you can also do this:
+
+Code:
+
+$ ./helloworld.py
+Hello World
+$
+
