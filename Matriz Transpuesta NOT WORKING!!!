@@ -1,0 +1,46 @@
+renglones = input("Ingrese el numero de filas: ")
+columnas = input("Ingrese el numero de columnas: ")
+#renglones = 2
+#columnas = 2
+M =[]
+
+for i in range(renglones):
+		M.append(['0']*columnas)
+		
+		
+for i in range(renglones):
+		M2 =[]
+		for j in range(columnas):
+			print ("Ingresa el valor para la columna: ", i, j)
+			a = input()
+			M2.append(a)
+		M.append(M2)
+		
+renglones = len(M)
+columnas = len (M[0])
+cadena = ""
+for i in range(renglones):
+		for j in range(columnas):
+				if j==columnas-1:
+					cadena=cadena+str(M[i][j])+"\n"
+				else:
+					adena=cadena+str(M[i][j])+"  "
+print cadena
+
+
+
+
+
+
+
+
+
+
+#for i in range(renglones):
+	#	for j in range(columnas):
+	#		cadena = cadena + str(M[i][j]) + "\n"
+			
+#print cadena
+		
+		
+		
