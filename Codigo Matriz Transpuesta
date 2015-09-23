@@ -1,0 +1,33 @@
+
+#Programa para el calculo de la transpuesta de un matriz
+def imprime_matriz(matriz):
+    filas=len(matriz)
+    columnas=len(matriz[0])
+    cadena=""
+ 
+    for i in range(filas):
+        for j in range(columnas):
+            if j==columnas-1:
+                cadena=cadena+str(matriz[i][j])+"\n"
+            else:
+                cadena=cadena+str(matriz[i][j])+"  "
+ 
+    print cadena
+ 
+
+matriz=[]
+filas=int(raw_input("Numero de Filas:"))
+columnas=int(raw_input("Numero de Columnas:"))
+
+for i in range(filas):
+    auxiliar=[]
+    for j in range(columnas):
+        elemento=int(raw_input("Elemento "+str(i+1)+","+str(j+1)+":"))
+        auxiliar.append(elemento)
+    matriz.append(auxiliar)
+
+print "\nMatriz Original"
+imprime_matriz(matriz)
+transpuesta=zip(*matriz)
+print "Transpuesta"
+imprime_matriz(transpuesta)
