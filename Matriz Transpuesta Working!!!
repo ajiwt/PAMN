@@ -1,0 +1,60 @@
+"""
+	Hecho por 
+"""
+
+M = []
+M3 = []
+
+print("**************************************************")
+print("*    Programa que transpone una matriz de N*M    *")
+print("**************************************************")
+print("\n\n\n")
+renglones = input("Ingrese el numero de filas: ")
+columnas = input("Ingrese el numero de columnas: ")
+
+for i in range(renglones):
+	M2 = []
+	M4 = []
+	for j in range(columnas):
+		aux = int(input("Ingresa el elemento "+str(i+1)+", "+str(j+1)+":  "))
+		M2.append(aux)
+		M3.append(aux)
+	M4.append(M3)
+	M.append(M2)
+		
+		
+
+print ("\n")
+
+print("*************Matriz Original*************")
+renglones = len(M)
+columnas = len (M[0])
+
+cadena = ""
+for i in range(renglones):
+		for j in range(columnas):
+				if j==columnas-1:
+					cadena=cadena+str(M[i][j])+"\n"
+				else:
+					cadena=cadena+str(M[i][j])+"  "
+print cadena
+
+print("\n\n\n\n\n")
+
+print ("*************Matriz Transpuesta*************")
+
+
+
+renglones = len(M)
+columnas = len (M[0])
+
+cadena = ""
+for i in range(renglones):
+		for j in range(columnas):
+				if j==columnas-1:
+					cadena=cadena+str(M[j][i])+"\n"
+				else:
+					cadena=cadena+str(M[j][i])+"  "
+print cadena
+
+
